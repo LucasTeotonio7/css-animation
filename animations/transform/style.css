@@ -1,0 +1,33 @@
+body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.box{
+    outline: 3px solid red;
+}
+
+/* TODO: transform: A Propriedade CSS transform permite modificar o espaço
+         coordenado do modelo de formatação CSS. Usando-a, elementos podem
+         ser traduzidos, rotacionados, ter seu tamanho ajustado e inclinados
+         de acordo com os valores definidos.
+
+    FIXME: translate():
+      reposiciona um elemento na direção horizontal e/ou vertical.
+
+    FIXME: scale():
+      define uma transformação que redimensiona um elemento no plano 2D.
+
+    FIXME: rotate():
+      define uma transformação que gira um elemento em torno de um ponto fixo
+      no plano 2D, sem deformá-lo.
+      valores podem ser: ex. 50deg ou 0.75turn ...
+
+    FIXME: skew():
+       modifica os angulos dos elementos, deixando o elemento esticado.
+ */
+
+img{
+    transform: translateX(20px) scale(1.1) rotate(26deg) skew(20deg);
+}

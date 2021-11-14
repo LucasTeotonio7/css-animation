@@ -1,0 +1,24 @@
+body{
+  margin: 30px
+}
+
+.box{
+  background-color: #237094;
+  width: 300px;
+  height: 300px;
+
+  /* propriedades transitadas para o hover */
+  transition-property: background-color, border-radius;
+  /* tempo em que cada uma será transitada */
+  transition-duration: 2s, 0.5s;
+  /* tempo de espera para executar a transição de estado */
+  transition-delay: 0.3s;
+  /* transições personalizadas */
+  transition-timing-function: ease-in;
+
+}
+
+.box:hover{
+  background-color: crimson;
+  border-radius: 50%;
+}

@@ -32,7 +32,22 @@ body{
   animation-delay: 0.3s;
   /* quantidade de vezes que a animação é executada */
   animation-iteration-count: infinite;
+  /* direção do ponto de origem da animação ao ponto final da mesma */
+  /* FIXME: normal: padrão;
+            reverse: de trás pra frente;
+            alternate: executa o movimento e revete ao ponto de origem */
+  animation-direction:alternate;
+  /* indica onde a animação deve finalizar */
+  /* animation-fill-mode: forwards; */
 
+  /* usar as propriedades da animação de forma simplificada */
+  animation: fly 1.5s linear infinite alternate;
+
+}
+
+#player:hover{
+    /* aplica o estado da animação, se for running fica em movimento, se for paused ele para a animação */
+    animation-play-state: paused;
 }
 
 
